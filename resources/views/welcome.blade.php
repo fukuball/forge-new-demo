@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ObeObe
+                    ObeObe Master
                 </div>
 
                 <div class="links">
