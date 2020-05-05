@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/rtmp-demo', function () {
+    return view('rtmp_demo');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
