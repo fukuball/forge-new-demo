@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,13 @@ const mix = require('laravel-mix');
  |
  */
 
+ mix.styles(
+  [
+    path.join(__dirname, 'node_modules/storybook/dist/storybook.css')
+  ],
+  'public/css/vendor.css'
+).version();
+
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+   .version();
